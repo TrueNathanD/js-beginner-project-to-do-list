@@ -70,6 +70,32 @@ form button:hover {
     align-items: center;
 }
 
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, .complete-btn {
+    background: #ce0303;
+    color: rgb(17, 17, 128, 0.8);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    background: #51ce03;
+    color: rgb(17, 17, 128, 0.8);
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
 .tagline {
     color: rgb(255, 255, 255);
     text-align: center;
