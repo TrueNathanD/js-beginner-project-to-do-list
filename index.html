@@ -23,7 +23,7 @@
 </head>
 <body>
     <header>
-        <h1>Beginner Vanilla JavaScript Project Tutorial:</h1>
+        <h1>Beginner Vanilla JavaScript Project:</h1>
         <h2>To Do List App</h2>
         <p class="tagline">"Do something amazing today."</p>
     </header>
@@ -33,12 +33,18 @@
         <button class="todo-button" type="submit">
             <i class="fas fa-plus-square"></i>
         </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
     </form>
 
 <div class="todo-container">
     <ul class="todo-list">
         <div class="todo">
-
         </div>
     </ul>
 </div>
