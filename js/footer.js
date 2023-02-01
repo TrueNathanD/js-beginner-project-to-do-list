@@ -29,3 +29,4 @@ if (day % 10 == 1) {
 
 // This sets the footer text
 footer.innerText = "Last modified: " + month + " " + day + daySuffix + ", " + year;
+
