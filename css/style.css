@@ -31,21 +31,27 @@ form {
 
 form input, form button {
     padding: 0.5rem;
+    font-family: "Roboto", sans-serif;
     font-size: 2rem;
+    font-weight: 600;
     border: none;
     background: rgb(255, 255, 255);
 }
 
 form button {
-    color: #c50b0b;
-    background-color: rgb(17, 17, 128, 0.5);
+    color: #ffffff;
+    background-color:  rgb(17, 17, 128, 0.5);
+    text-shadow: 2px 3px blueviolet;
+    font-family: "Roboto", monospace;
+    font-size: 2rem;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover {
-    background-color: #c50b0b;
-    color: rgb(17, 17, 128, 0.5);
+    background-color: rgba(255, 17, 0, 0.3);
+    color: rgb(255, 255, 255);
 }
 
 .todo-container {
@@ -113,20 +119,18 @@ select {
     appearance: none;
     outline: none;
     border: none;
+
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    background: rgb(80, 7, 81);
+    color: white;
 }
 
 .select {
     margin: 1rem;
     position: relative;
     overflow: hidden;
-}
-
-select {
-    width: 10rem;
-    cursor: pointer;
-    padding: 1rem;
-    background: rgb(80, 7, 81);
-    color: white;
 }
 
 .select::after {
@@ -170,8 +174,30 @@ h2 {
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 16px 16px;
-    font-family: 'Rubik Puddles', cursive;
-    font-weight: bold;
-    font-size: 60px;
-    text-shadow: 2px 2px rgb(32, 1, 26);
+    font-family: 'Rubik Puddles', monospace;
+    font-size: 75px;
+    text-shadow: 7px 7px 7px rgb(0, 0, 0);
 }
+
+.label-need {
+    font-family: "Roboto", monospace;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 3px blueviolet;
+}
+
+.footer {
+    color: rgb(255, 255, 255, 0.8);
+    text-shadow: 2px 3px black;
+    background-image: linear-gradient(14deg, rgb(80, 7, 81, 0.2), rgba(255, 17, 0, 0.2), rgb(17, 17, 128, 0.2), rgb(138, 44, 226, 0.2), rgba(255, 17, 0, 0.2), rgb(206, 3, 3, 0.2), rgb(31, 59, 103, 0.2), rgb(197, 11, 11, 0.2));
+    text-align: center;
+    font-family: "Consolas";
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px;
+    margin: 1px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+

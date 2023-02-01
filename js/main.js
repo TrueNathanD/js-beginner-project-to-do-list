@@ -1,18 +1,18 @@
 console.log("Hello, World.");
 
-// My Selectors
+// Selectors
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
 
-// My Event Listeners
+// Event Listeners
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodo);
 document.addEventListener('DOMContentLoaded', getTodos);
 
-// My Functions
+// Functions
 function addTodo(event) {
 
     event.preventDefault();
@@ -44,7 +44,6 @@ function addTodo(event) {
 
 function deleteCheck(e) {
     const item = e.target;
-
     if (item.classList[0] === 'trash-btn') {
         const todo = item.parentElement;
 
@@ -54,7 +53,6 @@ function deleteCheck(e) {
             todo.remove();
         });
     }
-
     if (item.classList[0] === 'complete-btn') {
         const todo = item.parentElement;
         todo.classList.toggle('completed');
@@ -69,19 +67,19 @@ function filterTodo(e) {
                 todo.style.display = 'flex';
                 break;
                 case "completed":
-                    if(todo.classList.contains("completed")){
+                    if(todo.classList.contains("completed")) {
                         todo.style.display = 'flex';
                     } else {
                         todo.style.display = 'none';
                     }
-                    break;
+                break;
                 case "incomplete":
                     if (!todo.classList.contains("completed")) {
                         todo.style.display = 'flex';
                     } else {
                         todo.style.display = 'none';
                     }
-                    break;
+                break;
                 }
             })
 }
@@ -139,3 +137,4 @@ function removeLocalTodos(todo) {
     todos.splice(todos.indexOf(todoIndex), 1);
     localStorage.setItem('todos', JSON.stringify(todos));
 }
+
